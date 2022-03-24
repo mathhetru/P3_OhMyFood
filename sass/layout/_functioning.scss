@@ -1,0 +1,53 @@
+//FONCTIONNEMENT 
+
+.functioning{
+    &-insert{
+    padding-bottom: 50px;
+    }
+    &__title{
+        font-weight: $weight-title;
+        font-size: $size-title;
+        padding:50px 0 10px 20px;
+        margin:0;
+    }
+    &-insert__link{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        background: $color-background;
+        border-radius: 20px;
+        margin: 10px 20px 10px 25px;
+        box-shadow: $soft-grey;
+        &:hover{
+            background: lighten($violet, 35%);
+            transition: .5s linear;
+            .functioning-insert-ball__icon{
+                color: $violet;
+                transition: .5s linear;
+            }
+        }
+    }
+    &-insert-ball{
+        position: relative;
+        margin-left:-10px;
+        height: 27px;
+        width: 27px;
+        background: $violet;
+        border-radius: 20px;
+    }
+    &-insert-ball__icon{
+        width:15px;
+        height:15px;
+        color: $dark-grey;
+        margin-left: 20px;
+    }
+    &-insert-ball__numb{
+        margin:4px 0 0 9px;
+        font-weight: $weight-title;
+        color: white;
+    }
+    &-insert__text{
+        padding: 27px;
+        margin: 0;
+    }
+}

@@ -1,0 +1,22 @@
+// FOOTER
+.footer{
+    background: darken($dark-grey, 30%);
+    &-insert{
+        padding:30px;
+    }
+    &-insert__title{
+        color:white;
+        font-family: $second-font;
+        letter-spacing: 0.05rem;
+        margin:0;
+        padding-bottom:20px;
+    }
+    &-insert__link{
+        display: block;
+        color:white;
+        margin: 10px 0;
+    }
+    &-insert__icon {
+        width: 30px;
+    }
+}

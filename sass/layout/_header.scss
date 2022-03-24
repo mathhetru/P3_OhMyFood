@@ -1,0 +1,27 @@
+// HEADER
+
+.header-omf{
+    position: sticky;
+    top:0;
+    background: white;
+    height:65px;
+    box-shadow: $shadow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    &__arrow{
+        color: $dark-grey;
+        font-size: 1.2rem;
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        &:hover{
+            color: darken($dark-grey,50%)
+        }
+    }
+    &__logo{
+        width: 190px;
+    }
+}

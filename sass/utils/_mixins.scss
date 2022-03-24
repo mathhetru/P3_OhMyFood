@@ -1,0 +1,33 @@
+@mixin newcard {
+    position:absolute;
+    right: 15px;
+    top: 15px;
+    background: $turquoise;
+    border-radius: 2px;
+    &__text{
+        display: block;
+        font-size: 0.9rem;
+        text-align: center;
+        color: darken($turquoise, 40%);
+        padding: 8px;
+    }
+}
+
+@mixin title {
+    margin:15px 0px 5px 15px;
+    font-weight: $weight-title;
+    font-size: $size-subtitle;
+}
+
+@mixin subtitle ($size: $size-subtitle){
+    margin:0px 0px 0px 15px;
+    font-weight: $weight-subtitle;
+    font-size: $size;
+}
+
+@mixin heart ($bottom: 25px){
+    font-size: 1.5rem;
+    position:absolute;
+    right: 25px;
+    bottom: $bottom;
+}

@@ -1,0 +1,31 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./layout/header";
+@import "./layout/location";
+@import "./layout/functioning";
+@import "./layout/restaurants";
+@import "./layout/menu";
+@import "./layout/footer";
+@import "./components/btn";
+
+
+
+// Eléments principaux de la page
+body{
+    font-family: $main-font;
+    width: 100%;
+    margin: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+* a {
+    text-decoration: none;
+    color: black;
+}
+* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

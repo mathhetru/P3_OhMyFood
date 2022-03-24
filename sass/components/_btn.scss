@@ -1,0 +1,36 @@
+.omf-btn{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    width:220px;
+    height:50px;
+    margin:30px auto;
+    border-radius:30px;
+    background: $gradient;
+    box-shadow: $shadow;
+    z-index: 1;
+    &__title{
+        text-align: center;
+        padding-top: 15px;
+        color:white;
+        font-weight: $weight-title;
+    }
+    &:hover{
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        border-radius:30px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: $gradient2;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+    }    
+}

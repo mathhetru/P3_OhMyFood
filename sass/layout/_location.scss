@@ -1,0 +1,38 @@
+
+//LOCATION 
+
+.location{
+    background: $color-background;
+    padding-bottom: 30px;;
+}
+.location-insert{
+    background: $soft-grey;
+    &__link{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+    &__text{
+        margin:0 25px;
+    }
+    &__icon{
+        margin-bottom: 2px;
+    }
+}
+.discovery-block{
+    &__title{
+        font-weight: $weight-title;
+        font-size: $size-title;
+        text-align: center;
+        margin: 40px 50px 20px 50px;
+    }
+    &__text{
+        font-weight: $weight-subtitle;
+        font-size: 1.1rem;
+        text-align: center;
+        margin:0 20px;
+    }
+}
+
