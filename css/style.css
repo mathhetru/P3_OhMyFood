@@ -289,8 +289,8 @@
   transition: 0.5s ease-in-out;
 }
 .page-menu-insert:hover .page-menu-insert__checkcontent {
-  transform: rotateX(180deg);
-  transition: rotate 1.5s ease-in-out;
+  transform: rotate(360deg);
+  transition: 0.5s ease-in-out;
 }
 .page-menu-insert__title {
   margin: 15px 0px 5px 15px;
@@ -337,7 +337,7 @@
   left: 20px;
   top: 25px;
   font-size: 1.5rem;
-  transform: rotateX(0deg);
+  transform: rotate(0deg);
   color: white;
   opacity: 1;
 }
