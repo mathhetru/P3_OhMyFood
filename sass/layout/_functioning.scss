@@ -2,7 +2,7 @@
 
 .functioning{
     &-insert{
-    padding-bottom: 50px;
+        padding-bottom: 50px;
     }
     &__title{
         font-weight: $weight-title;
@@ -16,8 +16,8 @@
         align-items: center;
         background: $color-background;
         border-radius: 20px;
-        margin: 10px 20px 10px 25px;
-        box-shadow: $soft-grey;
+        margin: 10px 20px 20px 25px;
+        box-shadow: 2px 2px 7px $soft-grey;
         &:hover{
             background: lighten($violet, 35%);
             transition: .5s linear;
@@ -49,5 +49,19 @@
     &-insert__text{
         padding: 27px;
         margin: 0;
+    }
+}
+
+/* BREAKPOINT DESKTOP ! */
+
+@media screen and (min-width: 1024px) {
+    .functioning{
+        max-width: 1024px;
+        margin: auto;
+    }
+    
+    .functioning-insert{
+        display: flex;
+        justify-content: space-between;
     }
 }

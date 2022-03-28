@@ -22,10 +22,16 @@
 .restaurant-page-menu{
     margin: $base-margin;
     &__title{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 27px 0;
+    }
+    &__text{
         font-family: $second-font;
         font-size: 1.75rem;
         margin:0;
-        padding-top: 20px;
+        
     }
     .hoverheart:hover{
         .hoverheart__content-solid {
@@ -40,7 +46,7 @@
     .hoverheart__content-solid{
         font-size: 1.5rem;
         position:absolute;
-        right: 25px;
+        right: 5px;
         top: 30px;
         background: $gradient;
         -webkit-background-clip: text;
@@ -50,21 +56,23 @@
     .hoverheart__content-light{
         font-size: 1.5rem;
         position:absolute;
-        right: 25px;
+        right: 5px;
         top: 30px;
         opacity: 1;
     }
 }
 .page-menu{
     &__title{
-        margin-bottom: 15px;
+        padding-bottom: 12px;
         text-transform: uppercase;
         font-size: $size-subtitle;
         font-weight: $weight-subtitle;
         margin:20px 0px 8px 0px;
         &::after{
+            display: block;
+            content: "";
             background-color: $turquoise;
-            margin:0;
+            margin-top:5px;
             height: 3px;
             width: 40px;
         }
@@ -79,7 +87,7 @@
         height: 70px;
         width: 100%;
         border-radius: 20px;
-        box-shadow: $soft-grey;
+        box-shadow: 2px 2px 7px $soft-grey;
         position: relative;
         overflow: hidden;
         &:hover .page-menu-insert__subtitle{
@@ -142,20 +150,20 @@
     }
 }
 
-.page-menu__title {
-    animation: SlideDown .4s ease-in-out;
-}
-
 .page-menu > :nth-of-type(1){
-    animation: SlideDown .6s ease-in-out;
+    animation: SlideDown .9s ease-in-out;
 }
 
 .page-menu > :nth-of-type(2){
-    animation: SlideDown .8s ease-in-out;
+    animation: SlideDown 1.2s ease-in-out;
 }
 
 .page-menu > :nth-of-type(3){
-    animation: SlideDown 1s ease-in-out;
+    animation: SlideDown 1.5s ease-in-out;
+}
+
+.page-menu > :nth-of-type(4){
+    animation: SlideDown 1.8s ease-in-out;
 }
 
 @keyframes SlideDown {
@@ -169,3 +177,23 @@
     }
 }
 
+/* BREAKPOINT DESKTOP ! */
+
+@media screen and (min-width: 1024px) {
+    .page-menu__title{
+        max-width: 1024px;
+        margin: auto;
+    }
+    .restaurant-page-menu__title{
+        max-width: 1024px;
+        margin: auto;
+    }
+    .page-menu{
+        max-width: 1024px;
+        margin: auto;
+        flex-direction: row;
+        &-insert{
+            margin: 0 15px 30px 0;
+        }
+    }
+}

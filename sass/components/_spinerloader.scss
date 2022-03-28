@@ -1,0 +1,44 @@
+.loader{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffffc9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loader 0.5s ease-out;
+    animation-delay: 1.2s;
+    animation-fill-mode: both;
+    &-item{
+        border: 10px solid $soft-grey;
+        border-top: 10px solid $pink;
+        border-bottom: 10px solid $violet;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        animation: spin 1.2s linear infinite;
+    }
+}
+
+@keyframes loader {
+    0%{
+        opacity:1;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100% {
+        opacity:0;
+        z-index:-1000 ;
+    }
+} 
+
+@keyframes spin {
+    0%{ 
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
