@@ -1,5 +1,4 @@
-//FONCTIONNEMENT 
-
+//FONCTIONNEMENT (PAGE PRINCIPALE)
 .functioning{
     &-insert{
         padding-bottom: 50px;
@@ -52,14 +51,12 @@
     }
 }
 
-/* BREAKPOINT DESKTOP ! */
-
+// BREAKPOINT DESKTOP FONCTIONNEMENT
 @media screen and (min-width: 1024px) {
     .functioning{
         max-width: 1024px;
         margin: auto;
     }
-    
     .functioning-insert{
         display: flex;
         justify-content: space-between;

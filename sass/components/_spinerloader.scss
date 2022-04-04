@@ -1,3 +1,5 @@
+// SPINNER LOADER SUR LA PAGE PRINCIPALE
+
 .loader{
     position: fixed;
     height: 100%;
@@ -21,6 +23,8 @@
     }
 }
 
+
+// ANIMATION EFFET DE FONDU 
 @keyframes loader {
     0%{
         opacity:1;
@@ -37,6 +41,7 @@
     }
 } 
 
+// ANIMATION ROTATION
 @keyframes spin {
     0%{ 
         transform: rotate(0deg);

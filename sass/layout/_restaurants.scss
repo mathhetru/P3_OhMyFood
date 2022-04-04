@@ -1,4 +1,4 @@
-// RESTAURANTS PAGE PRINCIPALE
+// RESTAURANTS (PAGE PRINCIPALE)
 .grey-background{
     background: $color-background;
 }
@@ -70,8 +70,7 @@
 }
 
 
-/* BREAKPOINT DESKTOP ! */
-
+// BREAKPOINT DESKTOP (PAGE RESTAURANT)
 @media screen and (min-width: 1024px) {
     .restaurant__title, .restaurant-inserts{
         max-width: 1024px;

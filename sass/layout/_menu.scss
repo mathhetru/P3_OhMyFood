@@ -1,4 +1,4 @@
-//IMAGE PAGE RESTAURANT
+//IMAGE (PAGE MENU)
 .picture-restaurant{
     overflow: hidden;
     height: 320px;
@@ -10,7 +10,7 @@
     }
 }
 
-//MENU PAGE RESTAURANT
+//MENU (PAGE MENU)
 .restaurant-page-grey-background{
     position: relative;
     background-color: $color-background;
@@ -18,7 +18,6 @@
     margin-top:-50px;
     padding-bottom:10px;
 }
-
 .restaurant-page-menu{
     margin: $base-margin;
     &__title{
@@ -152,22 +151,21 @@
     }
 }
 
+//TIMELINE DE "ENTREES, PLATS, DESSERTS" (PAGE MENU)
 .page-menu > :nth-of-type(1){
     animation: SlideDown .9s ease-in-out;
 }
-
 .page-menu > :nth-of-type(2){
     animation: SlideDown 1.2s ease-in-out;
 }
-
 .page-menu > :nth-of-type(3){
     animation: SlideDown 1.5s ease-in-out;
 }
-
 .page-menu > :nth-of-type(4){
     animation: SlideDown 1.8s ease-in-out;
 }
 
+//ANIMATION DE "ENTREES, PLATS, DESSERTS" (PAGE MENU)
 @keyframes SlideDown {
     from {
         transform: translateY(70px);
@@ -179,8 +177,7 @@
     }
 }
 
-/* BREAKPOINT DESKTOP ! */
-
+// BREAKPOINT DESKTOP (PAGE MENU)
 @media screen and (min-width: 1024px) {
     .page-menu__title{
         max-width: 1024px;

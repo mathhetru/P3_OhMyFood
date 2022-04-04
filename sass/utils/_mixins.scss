@@ -1,3 +1,4 @@
+//ENCART "NOUVEAU" (PAGE PRINCIPALE)
 @mixin newcard {
     position:absolute;
     right: 15px;
@@ -13,18 +14,21 @@
     }
 }
 
+//TITRES (TOUTES PAGES)
 @mixin title {
     margin:15px 0px 5px 15px;
     font-weight: $weight-title;
     font-size: $size-subtitle;
 }
 
+// SOUS-TITRES (TOUTES PAGES)
 @mixin subtitle ($size: $size-subtitle){
     margin:0px 0px 0px 15px;
     font-weight: $weight-subtitle;
     font-size: $size;
 }
 
+//COEUR (TOUTES PAGES)
 @mixin heart ($bottom: 25px){
     font-size: 1.5rem;
     position:absolute;
