@@ -270,6 +270,7 @@
   transition: 0.3s ease-in-out;
 }
 .restaurant-page-menu .hoverheart__content-solid {
+  cursor: pointer;
   font-size: 1.5rem;
   position: absolute;
   right: 5px;
@@ -280,6 +281,7 @@
   opacity: 0;
 }
 .restaurant-page-menu .hoverheart__content-light {
+  cursor: pointer;
   font-size: 1.5rem;
   position: absolute;
   right: 5px;
@@ -464,7 +466,7 @@
   margin: 30px auto;
   border-radius: 30px;
   background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0 2px 4px #636363cc;
+  box-shadow: 2px 2px 7px #636363cc;
   z-index: 1;
 }
 .omf-btn__title {
@@ -485,6 +487,7 @@
   bottom: 0;
   left: 0;
   background: linear-gradient(#9356DC, #ae80e5);
+  box-shadow: 0 2px 4px #636363cc;
   opacity: 0;
   z-index: -1;
   transition: opacity 250ms;
@@ -519,6 +522,9 @@
   }
   50% {
     opacity: 0.5;
+  }
+  99% {
+    z-index: 1000;
   }
   100% {
     opacity: 0;

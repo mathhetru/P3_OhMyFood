@@ -7,7 +7,7 @@
     margin:30px auto;
     border-radius:30px;
     background: $gradient;
-    box-shadow: $shadow;
+    box-shadow: 2px 2px 7px $dark-grey;
     z-index: 1;
     &__title{
         text-align: center;
@@ -29,6 +29,7 @@
         bottom: 0;
         left: 0;
         background: $gradient2;
+        box-shadow: $shadow;
         opacity: 0;
         z-index: -1;
         transition: opacity 250ms;
