@@ -6,7 +6,7 @@
     &__title{
         font-weight: $weight-title;
         font-size: $size-title;
-        padding:40px 0 10px 20px;
+        padding: 40px 0 10px 20px;
         margin: 0;
     }
     &-inserts{
@@ -68,7 +68,6 @@
         opacity: 1;
     }
 }
-
 
 // BREAKPOINT DESKTOP (PAGE RESTAURANT)
 @media screen and (min-width: 1024px) {

@@ -1,5 +1,4 @@
 // SPINNER LOADER SUR LA PAGE PRINCIPALE
-
 .loader{
     position: fixed;
     height: 100%;
@@ -22,7 +21,6 @@
         animation: spin 1.2s linear infinite;
     }
 }
-
 
 // ANIMATION EFFET DE FONDU 
 @keyframes loader {

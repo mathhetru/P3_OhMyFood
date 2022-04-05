@@ -1,8 +1,7 @@
-
 //LOCATION (PAGE PRINCIPALE)
 .location{
     background: $color-background;
-    padding-bottom: 30px;;
+    padding-bottom: 30px;
 }
 .location-insert{
     background: $soft-grey;
@@ -14,7 +13,7 @@
         font-size: 1rem;
     }
     &__text{
-        margin:0 25px;
+        margin: 0 25px;
     }
     &__icon{
         margin-bottom: 2px;
@@ -31,7 +30,7 @@
         font-weight: $weight-subtitle;
         font-size: 1.1rem;
         text-align: center;
-        margin:0 20px;
+        margin: 0 20px;
     }
 }
 
